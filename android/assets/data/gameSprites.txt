@@ -1,0 +1,68 @@
+gameSprites.png
+size: 1280, 1717
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+aaronsplat
+  rotate: false
+  xy: 507, 0
+  size: 177, 214
+  orig: 177, 214
+  offset: 0, 0
+  index: -1
+background1
+  rotate: false
+  xy: 0, 997
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+background2
+  rotate: false
+  xy: 0, 277
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+run1
+  rotate: false
+  xy: 247, 0
+  size: 130, 214
+  orig: 130, 214
+  offset: 0, 0
+  index: -1
+run2
+  rotate: false
+  xy: 377, 0
+  size: 130, 214
+  orig: 130, 214
+  offset: 0, 0
+  index: -1
+run3
+  rotate: false
+  xy: 117, 0
+  size: 130, 214
+  orig: 130, 214
+  offset: 0, 0
+  index: -1
+sarahbig
+  rotate: false
+  xy: 684, 0
+  size: 186, 277
+  orig: 186, 277
+  offset: 0, 0
+  index: -1
+sarahdouble
+  rotate: false
+  xy: 870, 0
+  size: 211, 174
+  orig: 211, 174
+  offset: 0, 0
+  index: -1
+sarahsmall
+  rotate: false
+  xy: 0, 0
+  size: 117, 174
+  orig: 117, 174
+  offset: 0, 0
+  index: -1
