@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
@@ -14,7 +15,8 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
  */
 public class AssetLoader {
     public static TextureAtlas gameSprites;
-    public static TextureRegion run1, run2, run3, aaronSplat, bg1, bg2, sarahBig, sarahSmall, sarahDouble;
+    public static Texture logoTexture;
+    public static TextureRegion run1, run2, run3, aaronSplat, bg1, bg2, sarahBig, sarahSmall, sarahDouble, logo;
     public static Animation aaron;
     public static Sound jump, splat;
     public static Music music;
@@ -23,6 +25,10 @@ public class AssetLoader {
     private static Preferences prefs;
 
     public static void load() {
+        logoTexture = new Texture(Gdx.files.internal("data/logo.jpg"));
+        logoTexture.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+        logo = new TextureRegion(logoTexture, 0, 0, 1280, 720);
+
         gameSprites = new TextureAtlas(Gdx.files.internal("data/gameSprites.txt"));
 
         run1 = gameSprites.findRegion("run1");

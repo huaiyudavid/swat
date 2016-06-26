@@ -8,10 +8,9 @@ import com.badlogic.gdx.math.Vector2;
  */
 public class Scrollable {
     public static final float SCROLL_SPEED = -400;
-    public static final float MAX_SCROLL_SPEED = -700;
+    public static final float MAX_SCROLL_SPEED = -1000;
     public static final float SCROLL_FACTOR = 4;
 
-    // Protected is similar to private, but allows inheritance by subclasses.
     protected Vector2 position;
     protected Vector2 velocity;
     protected int width;
@@ -57,7 +56,6 @@ public class Scrollable {
         velocity.x = 0;
     }
 
-    // Getters for instance variables
     public boolean isScrolledLeft() {
         return isScrolledLeft;
     }

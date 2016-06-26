@@ -9,7 +9,7 @@ import com.ninjapenguin.helpers.AssetLoader;
  */
 public class Aaron {
     private static final float GRAVITY = -2700f;
-    private static final float JUMP = 1500f;
+    private static final float JUMP = 1400f;
 
     private Vector2 position;
     private Vector2 velocity;

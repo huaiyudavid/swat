@@ -122,8 +122,8 @@ public class GameRenderer {
 
     private void drawScore() {
         AssetLoader.comicsans.getData().setScale(.5f, .5f);
-//        String score = "Score: " + leftPad("" + world.getScore(), 6);
-        String score = "Score: " + world.getScore();
+        String score = "Score: " + leftPad("" + world.getScore(), 6);
+//        String score = "Score: " + world.getScore();
         AssetLoader.comicsans.draw(batcher, score, 950, 668);
     }
 
@@ -131,8 +131,8 @@ public class GameRenderer {
         AssetLoader.comicsans.getData().setScale(.75f, .75f);
         String gameOver = "GAME OVER";
         String replay = "Tap to Restart";
-//        String highScore = "High Score: " + leftPad("" + AssetLoader.getHighScore(), 6);
-        String highScore = "High Score: " + AssetLoader.getHighScore();
+        String highScore = "High Score: " + leftPad("" + AssetLoader.getHighScore(), 6);
+//        String highScore = "High Score: " + AssetLoader.getHighScore();
         glyphLayout.setText(AssetLoader.comicsans, gameOver);
         AssetLoader.comicsans.draw(batcher, glyphLayout, world.getWidth()/2 - glyphLayout.width/2, 600);
         glyphLayout.setText(AssetLoader.comicsans, replay);
@@ -143,7 +143,7 @@ public class GameRenderer {
 
     private void drawInstructions() {
         String instructions = "Tap to Start";
-        AssetLoader.comicsans.getData().setScale(.75f, .75f);
+        AssetLoader.comicsans.getData().setScale(1.5f, 1.5f);
         glyphLayout.setText(AssetLoader.comicsans, instructions);
         AssetLoader.comicsans.draw(batcher, glyphLayout, world.getWidth()/2 - glyphLayout.width/2, world.getHeight()/2 + 100);
     }
@@ -193,12 +193,12 @@ public class GameRenderer {
 //        Gdx.gl.glDisable(GL20.GL_BLEND);
     }
 
-//    private String leftPad(String str, int digits) {
-//        String prefix = "";
-//        int length = digits - str.length();
-//        for (int i = 0; i < length; i++) {
-//            prefix += "0";
-//        }
-//        return prefix + str;
-//    }
+    private String leftPad(String str, int digits) {
+        String prefix = "";
+        int length = digits - str.length();
+        for (int i = 0; i < length; i++) {
+            prefix += "0";
+        }
+        return prefix + str;
+    }
 }

@@ -4,7 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.ninjapenguin.helpers.AssetLoader;
-import com.ninjapenguin.screens.GameScreen;
+import com.ninjapenguin.screens.SplashScreen;
 
 public class Swat extends Game {
 	SpriteBatch batch;
@@ -13,7 +13,7 @@ public class Swat extends Game {
 	@Override
 	public void create() {
 		AssetLoader.load();
-		setScreen(new GameScreen());
+		setScreen(new SplashScreen(this));
 	}
 
 	@Override
