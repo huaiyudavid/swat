@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.ninjapenguin.helpers.AssetLoader;
-import com.ninjapenguin.swat.Swat;
+import com.ninjapenguin.swat.SwatGame;
 import com.ninjapenguin.tweenaccessors.SpriteAccessor;
 
 import aurelienribon.tweenengine.BaseTween;
@@ -23,9 +23,9 @@ public class SplashScreen implements Screen {
     private TweenManager manager;
     private SpriteBatch batcher;
     private Sprite sprite;
-    private Swat game;
+    private SwatGame game;
 
-    public SplashScreen(Swat game) {
+    public SplashScreen(SwatGame game) {
         this.game = game;
     }
 

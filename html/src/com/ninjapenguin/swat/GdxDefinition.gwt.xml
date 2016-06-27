@@ -5,6 +5,11 @@
 	<inherits name='aurelienribon.tweenengine'/>
 
 	<inherits name='Swat' />
+    <inherits name='gameobjects' />
+    <inherits name='gameworld'/>
+    <inherits name='helpers'/>
+    <inherits name='screens'/>
+    <inherits name='tweenaccessors'/>
 	<entry-point class='com.ninjapenguin.swat.client.HtmlLauncher' />
 	
 	<set-configuration-property name="gdx.assetpath" value="../android/assets" />

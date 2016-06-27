@@ -3,7 +3,7 @@ package com.ninjapenguin.swat.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import com.ninjapenguin.swat.Swat;
+import com.ninjapenguin.swat.SwatGame;
 
 public class HtmlLauncher extends GwtApplication {
 
@@ -14,6 +14,6 @@ public class HtmlLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener getApplicationListener () {
-                return new Swat();
+                return new SwatGame();
         }
 }
